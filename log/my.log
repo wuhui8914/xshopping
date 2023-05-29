@@ -1,0 +1,63 @@
+2023-05-26 16:11:13.634  INFO 6392 --- [main] c.v.xshopping.XshoppingApplicationTests  : Starting XshoppingApplicationTests using Java 1.8.0_66 on dongx with PID 6392 (started by Administrator in E:\idea\xshopping)
+2023-05-26 16:11:13.636  INFO 6392 --- [main] c.v.xshopping.XshoppingApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2023-05-26 16:11:16.382  WARN 6392 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.vno.xshopping]' package. Please check your configuration.
+2023-05-26 16:11:21.757  INFO 6392 --- [main] c.v.xshopping.XshoppingApplicationTests  : Started XshoppingApplicationTests in 8.927 seconds (JVM running for 10.743)
+2023-05-26 16:16:16.797  INFO 17624 --- [main] c.v.xshopping.XshoppingApplicationTests  : Starting XshoppingApplicationTests using Java 1.8.0_66 on dongx with PID 17624 (started by Administrator in E:\idea\xshopping)
+2023-05-26 16:16:16.799  INFO 17624 --- [main] c.v.xshopping.XshoppingApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2023-05-26 16:16:17.720  WARN 17624 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.vno.xshopping]' package. Please check your configuration.
+2023-05-26 16:16:23.528  INFO 17624 --- [main] c.v.xshopping.XshoppingApplicationTests  : Started XshoppingApplicationTests in 7.527 seconds (JVM running for 9.792)
+2023-05-26 16:21:57.031  INFO 17456 --- [main] c.v.xshopping.XshoppingApplicationTests  : Starting XshoppingApplicationTests using Java 1.8.0_66 on dongx with PID 17456 (started by Administrator in E:\idea\xshopping)
+2023-05-26 16:21:57.033  INFO 17456 --- [main] c.v.xshopping.XshoppingApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2023-05-26 16:21:58.943  WARN 17456 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.vno.xshopping]' package. Please check your configuration.
+2023-05-26 16:22:04.239  INFO 17456 --- [main] c.v.xshopping.XshoppingApplicationTests  : Started XshoppingApplicationTests in 8.152 seconds (JVM running for 10.665)
+2023-05-26 16:31:24.649  INFO 17012 --- [main] com.vno.XshoppingApplication             : Starting XshoppingApplication using Java 1.8.0_66 on dongx with PID 17012 (E:\idea\xshopping\target\classes started by Administrator in E:\idea\xshopping)
+2023-05-26 16:31:24.653  INFO 17012 --- [main] com.vno.XshoppingApplication             : No active profile set, falling back to 1 default profile: "default"
+2023-05-26 16:31:27.233  INFO 17012 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2023-05-26 16:31:27.280  INFO 17012 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-26 16:31:27.281  INFO 17012 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-05-26 16:31:28.484  INFO 17012 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-26 16:31:28.486  INFO 17012 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3760 ms
+2023-05-26 16:31:34.723  INFO 17012 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2023-05-26 16:31:34.738  INFO 17012 --- [main] com.vno.XshoppingApplication             : Started XshoppingApplication in 10.816 seconds (JVM running for 12.505)
+2023-05-26 16:35:41.016  INFO 14936 --- [main] com.vno.XshoppingApplication             : Starting XshoppingApplication using Java 1.8.0_66 on dongx with PID 14936 (E:\idea\xshopping\target\classes started by Administrator in E:\idea\xshopping)
+2023-05-26 16:35:41.018  INFO 14936 --- [main] com.vno.XshoppingApplication             : No active profile set, falling back to 1 default profile: "default"
+2023-05-26 16:35:44.707  INFO 14936 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2023-05-26 16:35:44.789  INFO 14936 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-26 16:35:44.791  INFO 14936 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-05-26 16:35:45.991  INFO 14936 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-26 16:35:45.992  INFO 14936 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4902 ms
+2023-05-26 16:35:49.849  INFO 14936 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2023-05-26 16:35:49.862  INFO 14936 --- [main] com.vno.XshoppingApplication             : Started XshoppingApplication in 9.51 seconds (JVM running for 10.839)
+2023-05-26 16:37:14.232  INFO 14952 --- [main] com.vno.XshoppingApplication             : Starting XshoppingApplication using Java 1.8.0_66 on dongx with PID 14952 (E:\idea\xshopping\target\classes started by Administrator in E:\idea\xshopping)
+2023-05-26 16:37:14.238  INFO 14952 --- [main] com.vno.XshoppingApplication             : No active profile set, falling back to 1 default profile: "default"
+2023-05-26 16:37:16.220  INFO 14952 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2023-05-26 16:37:16.293  INFO 14952 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-26 16:37:16.294  INFO 14952 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-05-26 16:37:17.458  INFO 14952 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-26 16:37:17.460  INFO 14952 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3174 ms
+2023-05-26 16:37:21.962  INFO 14952 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2023-05-26 16:37:22.006  INFO 14952 --- [main] com.vno.XshoppingApplication             : Started XshoppingApplication in 8.545 seconds (JVM running for 10.565)
+2023-05-26 16:38:05.199  INFO 9232 --- [main] com.vno.XshoppingApplication             : Starting XshoppingApplication using Java 1.8.0_66 on dongx with PID 9232 (E:\idea\xshopping\target\classes started by Administrator in E:\idea\xshopping)
+2023-05-26 16:38:05.202  INFO 9232 --- [main] com.vno.XshoppingApplication             : No active profile set, falling back to 1 default profile: "default"
+2023-05-26 16:38:06.386  INFO 9232 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2023-05-26 16:38:06.395  INFO 9232 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-26 16:38:06.396  INFO 9232 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-05-26 16:38:06.565  INFO 9232 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-26 16:38:06.566  INFO 9232 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1319 ms
+2023-05-26 16:38:11.136  INFO 9232 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2023-05-26 16:38:11.186  INFO 9232 --- [main] com.vno.XshoppingApplication             : Started XshoppingApplication in 6.511 seconds (JVM running for 8.007)
+2023-05-26 16:38:21.952  INFO 9232 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-26 16:38:21.953  INFO 9232 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-26 16:38:21.962  INFO 9232 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2023-05-26 16:39:41.220  INFO 17524 --- [main] com.vno.XshoppingApplication             : Starting XshoppingApplication using Java 1.8.0_66 on dongx with PID 17524 (E:\idea\xshopping\target\classes started by Administrator in E:\idea\xshopping)
+2023-05-26 16:39:41.222  INFO 17524 --- [main] com.vno.XshoppingApplication             : No active profile set, falling back to 1 default profile: "default"
+2023-05-26 16:39:42.247  INFO 17524 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2023-05-26 16:39:42.270  INFO 17524 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-26 16:39:42.271  INFO 17524 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-05-26 16:39:42.455  INFO 17524 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-26 16:39:42.455  INFO 17524 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1192 ms
+2023-05-26 16:39:43.519  INFO 17524 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2023-05-26 16:39:43.532  INFO 17524 --- [main] com.vno.XshoppingApplication             : Started XshoppingApplication in 2.782 seconds (JVM running for 4.148)
+2023-05-26 16:39:55.277  INFO 17524 --- [http-nio-8888-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-26 16:39:55.278  INFO 17524 --- [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-26 16:39:55.284  INFO 17524 --- [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
