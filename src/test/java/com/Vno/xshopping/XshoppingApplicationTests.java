@@ -1,5 +1,6 @@
 package com.vno.xshopping;
 
+import cn.hutool.crypto.SecureUtil;
 import com.sun.org.apache.bcel.internal.generic.NEW;
 import org.junit.jupiter.api.Test;
 import org.mybatis.generator.api.MyBatisGenerator;
@@ -26,6 +27,12 @@ class XshoppingApplicationTests {
         DefaultShellCallback callback = new DefaultShellCallback(ovewrite);
         MyBatisGenerator myBatisGenerator = new MyBatisGenerator(config,callback,warnings);
         myBatisGenerator.generate(null);
+    }
+
+    @Test
+    void md5(){
+        String password = SecureUtil.md5("123456");
+        System.out.println(password);
     }
 
 }

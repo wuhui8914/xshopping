@@ -42,7 +42,7 @@ function personalPage() {
 }
 
 function logout() {
-    axios.get('/logout').then(res => {
+    axios.get('/user/logout').then(res => {
         if (res.data.code === '0') {
             window.location = '/end/page/login.html';
         } else {
