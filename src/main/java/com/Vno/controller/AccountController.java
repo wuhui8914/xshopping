@@ -19,6 +19,7 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.security.PublicKey;
 
 /**
  * @Description: 登录、退出相关的控制器
@@ -92,5 +93,37 @@ public class AccountController {
     public Result logout(HttpServletRequest request){
         request.getSession().setAttribute(Common.USER_INFO,null);
         return Result.success();
+    }
+
+    /**
+     * @description:小程序端用户注册
+     * @author: dx
+     * @date: 2023/6/7 9:53
+     * @param: [request]
+     * @return: com.vno.common.Result<com.vno.entity.UserInfo>
+     *
+     **/
+    @ApiOperation("小程序端用户注册")
+    @PostMapping("/register")
+    public Result<UserInfo> register(@RequestBody UserInfo userInfo,HttpServletRequest request){
+        if(StrUtil.isBlank(userInfo.getName()) || StrUtil.isBlank(userInfo.getPassword())){
+            throw new CustomException(ResultCode.PARAM_ERROR);
+        }
+        UserInfo register = userInfoService.add(userInfo);
+        HttpSession session = request.getSession();
+        session.setAttribute(Common.USER_INFO,register);
+        session.setMaxInactiveInterval(60*60*24); //60*60*24 一天
+        return Result.success(register);
+    }
+
+
+    @GetMapping("/auth")
+    @ApiOperation("小程序端用户是否登录")
+    public Result getAuth(HttpServletRequest request){
+        Object user = request.getSession().getAttribute(Common.USER_INFO);
+        if(user == null){
+            return Result.error("401","未登录");
+        }
+        return Result.success(user);
     }
 }

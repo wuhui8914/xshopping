@@ -2,7 +2,9 @@ package com.vno.controller;
 
 import com.github.pagehelper.PageInfo;
 import com.vno.common.Result;
+import com.vno.common.ResultCode;
 import com.vno.entity.UserInfo;
+import com.vno.exception.CustomException;
 import com.vno.service.UserInfoService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
@@ -59,10 +61,33 @@ public class UserInfoController {
      * @return: com.vno.common.Result<com.vno.entity.UserInfo>
      **/
     @ApiOperation("新增用户")
+//    @ApiImplicitParams({
+//            @ApiImplicitParam(dataType = "",name = "userInfo", value = "当前页",required = true),
+//    })
     @PostMapping("/add")
     public Result<UserInfo> add(@RequestBody UserInfo userInfo){
         UserInfo userInfoAdd = userInfoService.add(userInfo);
         return Result.success(userInfoAdd);
 
+    }
+
+    @ApiOperation("更新用户")
+    @PutMapping("/update")
+    public Result update(@RequestBody UserInfo userInfo){
+        int i = userInfoService.update(userInfo);
+        if( i== 0){
+            throw new CustomException(ResultCode.USER_UPDATE_USER);
+        }
+        return Result.success();
+    }
+
+    @ApiOperation("删除用户")
+    @DeleteMapping("/delete/{id}")
+    public Result delete(@PathVariable Long id){
+        int i = userInfoService.delete(id);
+        if( i== 0){
+            throw new CustomException(ResultCode.USER_DELETE_USER);
+        }
+        return Result.success();
     }
 }

@@ -12,6 +12,7 @@ import com.vno.mapper.UserInfoMapper;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import javax.jws.soap.SOAPBinding;
 import java.util.List;
 
 /**
@@ -84,10 +85,18 @@ public class UserInfoService {
         return PageInfo.of(list);
     }
 
+    /**
+     * @description: 新增用户信息
+     * @author: dx
+     * @date: 2023/6/1 9:39
+     * @param: [userInfo]
+     * @return: com.vno.entity.UserInfo
+     **/
     public UserInfo add(UserInfo userInfo){
-        int count = userInfoMapper.chckRepeat("name",userInfo.getName());
-        if (count >0){
-            throw new CustomException(ResultCode.USER_EXIST_ERROR);
+        List<UserInfo> byName = userInfoMapper.findByName(userInfo.getName());
+
+        if(CollectionUtil.isNotEmpty(byName)){
+            return byName.get(0);
         }
 
         if (StrUtil.isBlank(userInfo.getPassword())){
@@ -101,5 +110,29 @@ public class UserInfoService {
         userInfo.setLevel(3);
         userInfoMapper.insertSelective(userInfo);
         return userInfo;
+    }
+
+    /**
+     * @description: 修改用户信息
+     * @author: dx
+     * @date: 2023/6/1 9:37
+     * @param: [userInfo]
+     * @return: com.vno.entity.UserInfo
+     **/
+    public int update(UserInfo userInfo){
+        int i = userInfoMapper.updateByPrimaryKeySelective(userInfo);
+        return i;
+    }
+
+    /**
+     * @description:根据id删除用户
+     * @author: dx
+     * @date: 2023/6/1 9:50
+     * @param: [id]
+     * @return: int
+     **/
+    public int delete(Long id){
+        int i = userInfoMapper.deleteByPrimaryKey(id);
+        return i;
     }
 }
