@@ -95,7 +95,7 @@ public class GoodsInfoController {
 
     @ApiOperation("根据商品id查询商品")
     @GetMapping("/detail/{id}")
-    public Result<GoodsInfo> detail(@PathVariable Integer id){
+    public Result<GoodsInfo> detail(@PathVariable Long id){
         GoodsInfo byId = goodsInfoService.findById(id);
         return Result.success(byId);
     }
@@ -125,4 +125,6 @@ public class GoodsInfoController {
         return Result.success(page);
 
     }
+
+
 }

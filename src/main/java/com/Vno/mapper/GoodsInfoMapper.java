@@ -14,7 +14,7 @@ import java.util.List;
 public interface GoodsInfoMapper extends Mapper<GoodsInfo> {
 
     /*根据商品名称或者根据id模糊查询*/
-    List<GoodsInfo> findByName(@Param("name") String name,@Param("id") Integer id);
+    List<GoodsInfo> findByName(@Param("name") String name,@Param("id") Long id);
 
     /*查询推荐商品*/
     @Select("select * from goods_info where recommend='是'")

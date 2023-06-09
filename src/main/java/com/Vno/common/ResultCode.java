@@ -22,7 +22,9 @@ public enum ResultCode {
     USER_UPDATE_TYPEINFO("2009","商品类别更新失败"),
     USER_DELETE_TYPEINFO("2010","商品类别删除失败"),
     USER_UPDATE_GOODSINFO("2009","商品更新失败"),
-    USER_DELETE_GOODSINFO("2010","商品删除失败");
+    USER_DELETE_GOODSINFO("2010","商品删除失败"),
+    USER_UPDATE_CARTINFO("2012","购物车商品数量更新失败");
+
 
     public String code;
 

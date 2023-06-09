@@ -98,7 +98,7 @@ public class GoodsInfoService {
      * @param: [id]
      * @return: com.vno.entity.GoodsInfo
      **/
-    public GoodsInfo findById(Integer id){
+    public GoodsInfo findById(Long id){
         List<GoodsInfo> list = goodsInfoMapper.findByName(null,id);
         if(list == null || list.size() == 0){
             return null;

@@ -2,5 +2,16 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.vno.mapper.CartInfoMapper">
 
+    <select id="findCartByUserId" resultType="com.vno.entity.CartInfo">
+        select a.*,b.name as userName,c.name as goodsName,c.id as goodsId from cart_info as a
+        left join user_info as b on a.userId= b.id
+            left join goods_info as c on a.goodsId = c.id
+        where a.userId = #{userId}
+    </select>
+
+
+    <update id="updateCartInfoCount" parameterType="com.vno.entity.CartInfo">
+        update  cart_info set count = #{counts} where userId = #{userId} and goodsId = #{goodsId}
+    </update>
 
 </mapper>
