@@ -12,7 +12,6 @@ import com.vno.mapper.UserInfoMapper;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-import javax.jws.soap.SOAPBinding;
 import java.util.List;
 
 /**
@@ -134,5 +133,17 @@ public class UserInfoService {
     public int delete(Long id){
         int i = userInfoMapper.deleteByPrimaryKey(id);
         return i;
+    }
+
+    /**
+     * 功能描述:根据用户id获取用户信息
+     * @author Dx
+     * @date 2023/6/27 0027
+     * @param id
+     * @return com.vno.entity.UserInfo
+     */
+    public UserInfo findById(Long id){
+        UserInfo userInfo = userInfoMapper.selectByPrimaryKey(id);
+        return userInfo;
     }
 }
